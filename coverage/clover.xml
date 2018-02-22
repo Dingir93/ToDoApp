@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1518574853599" clover="3.2.0">
+  <project timestamp="1518574853599" name="All files">
+    <metrics statements="16" coveredstatements="1" conditionals="66" coveredconditionals="0" methods="21" coveredmethods="0" elements="103" coveredelements="1" complexity="0" loc="16" ncloc="16" packages="2" files="3" classes="3">
+      <package name="src">
+        <metrics statements="8" coveredstatements="0" conditionals="33" coveredconditionals="0" methods="10" coveredmethods="0"/>
+        <file name="App.js" path="C:\Users\Sirius\Documents\sandbox\AwesomeProject\AwesomeProject-master\src\App.js">
+          <metrics statements="8" coveredstatements="0" conditionals="33" coveredconditionals="0" methods="10" coveredmethods="0"/>
+          <line num="1" count="0" type="cond" truecount="0" falsecount="8"/>
+          <line num="6" count="0" type="stmt"/>
+          <line num="7" count="0" type="stmt"/>
+          <line num="15" count="0" type="cond" truecount="0" falsecount="23"/>
+          <line num="17" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="19" count="0" type="stmt"/>
+          <line num="24" count="0" type="stmt"/>
+          <line num="26" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="src.screens">
+        <metrics statements="8" coveredstatements="1" conditionals="33" coveredconditionals="0" methods="11" coveredmethods="0"/>
+        <file name="TaskScreen.js" path="C:\Users\Sirius\Documents\sandbox\AwesomeProject\AwesomeProject-master\src\screens\TaskScreen.js">
+          <metrics statements="6" coveredstatements="0" conditionals="33" coveredconditionals="0" methods="10" coveredmethods="0"/>
+          <line num="1" count="0" type="cond" truecount="0" falsecount="8"/>
+          <line num="2" count="0" type="cond" truecount="0" falsecount="23"/>
+          <line num="6" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="8" count="0" type="stmt"/>
+          <line num="10" count="0" type="stmt"/>
+          <line num="13" count="0" type="stmt"/>
+        </file>
+        <file name="introscreen.js" path="C:\Users\Sirius\Documents\sandbox\AwesomeProject\AwesomeProject-master\src\screens\introscreen.js">
+          <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="37" count="0" type="stmt"/>
+          <line num="67" count="1" type="stmt"/>
+        </file>
+      </package>
+    </metrics>
+  </project>
+</coverage>
