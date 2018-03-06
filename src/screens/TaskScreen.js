@@ -7,10 +7,14 @@ import {
   Text,
   Image,
   StyleSheet
+  ScrollView,
+  TouchableHighlight,
+  Modal
 } from 'react-native';
 
 import TasksHeader from './../Components/TasksHeader';
 import TaskList from './../Components/TaskList';
+import AddTaskModal from './../modals/AddTaskModal';
 
 export default class TasksScreen extends Component<Props> {
   constructor(props){
@@ -25,10 +29,27 @@ export default class TasksScreen extends Component<Props> {
         {id: 6, title: 'Netflix and chill', completed: false},
         {id: 7, title: 'Pistear de nuevo', completed: false},
         {id: 8, title: '420', completed: true}
-      ]
+      ],
+      showModal: false
     }
   }
+
+  showModal(){
+    this.setState({showModal: true})
+  }
+
+  hideModal(){
+    this.setState({showModal: false})
+  }
+
   addTask(){
+    // obtener el valor del Titulo
+    //Generar el objeto {id,titulo,bandera}
+    //Generar el id que es mala practica
+    //Setear la bandera de comletado a falso por default
+    //Copiar el arreglo Task Original
+    //Mandar la nueva tarea a la copia del arreglo
+    //Actualizar el estado
 
   }
 
@@ -73,13 +94,16 @@ export default class TasksScreen extends Component<Props> {
     return (
       <View style={ styles.container }>
         <TasksHeader toBeCompleted={this.calculateTaskToBeCompleted()} />
-        //<View style={ styles.tasksContainer }>
-          //<TaskList tasks={this.renderTasks}/>
-        //</View>
         <ScrollView style={styles.tasksContainer}>{this.renderTasks()}</ScrollView>
-          <TouchableHighlight style={styles.addTaskButton}>
+          <TouchableHighlight style={styles.addTaskButton} onPress=>
             <Image style={styles.plusIcon} source={require('./../images/icon-plus.png')} />
           </TouchableHighlight>
+          <Modal visible ={ this.state.showModal }
+
+          >
+
+          <AddTaskModal hideModal={this.hideModal.bind(this)} />
+          </Modal>
       </View>
     )
   }
